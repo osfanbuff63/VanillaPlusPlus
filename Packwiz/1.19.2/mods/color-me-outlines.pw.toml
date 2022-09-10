@@ -1,0 +1,13 @@
+name = "Color Me Outlines"
+filename = "wraith-colormeoutlines-1.1.1.jar"
+side = "client"
+
+[download]
+url = "https://cdn.modrinth.com/data/LpD5NoYs/versions/1.1.1/wraith-colormeoutlines-1.1.1.jar"
+hash-format = "sha1"
+hash = "49690a3c6f836c14fa090169605cbc5cb52dc9c8"
+
+[update]
+[update.modrinth]
+mod-id = "LpD5NoYs"
+version = "8t6KRJoB"

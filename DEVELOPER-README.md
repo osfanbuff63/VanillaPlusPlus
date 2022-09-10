@@ -1,14 +1,13 @@
-# Fabulously Optimized repository
+# Vanilla++ repository
 
-Welcome to my repository.
+Welcome to the repository.
 Here you'll find the resources for:
 
-* CurseForge modpack [(read more)](https://support.curseforge.com/en/support/solutions/articles/9000196904-creating-a-custom-profile)
 * MultiMC modpack [(read more)](https://github.com/MultiMC/MultiMC5/wiki/Instance-settings)
 * MultiMC modpack with packwiz [(read more)](https://github.com/comp500/packwiz#packwiz-installer-for-pack-installation)
 * Packwiz files [(read more)](https://github.com/comp500/packwiz#packwiz)
-* Modrinth files [(read more)](https://github.com/Madis0/fabulously-optimized/issues/63)
-* Changelog, license, readme, [cape](https://github.com/Madis0/fabulously-optimized/wiki/Free-cape)
+* Modrinth files [(read more)](https://docs.modrinth.com/docs/modpacks/creating_modpacks/)
+* Changelog, license, readme, <!-- commented out until used [cape](https://github.com/Madis0/fabulously-optimized/wiki/Free-cape) -->
 * GitHub meta files in `.github` [(read more)](https://stackoverflow.com/a/61301254)
 * GitHub page in `docs` [(read more)](https://pages.github.com/) - currently just a redirection to CF page
 
@@ -22,13 +21,9 @@ Other things to note:
 
 Contact us in Discord if you have ideas on how to streamline this process while still testing the pack in the launchers.
 
-1. Download the latest modpack version to CurseForge Launcher
+1. Download the latest modpack version to MultiMC.
 2. Do changes, test
 3. Update the version with `Version update.py`
-4. Export to ZIP manually via CurseForge Launcher's option
-5. Copy to MultiMC using `CurseForge to MultiMC-Git.py`
-   * If needed, change the Minecraft version in the script
-6. Run it in MultiMC, test
 7. Export to ZIP manually via MultiMC's option
 8. Run `MultiMC to Git.py` to reflect manifest updates in Git and streamline MultiMC ZIP's manifest 
 9. Run `CurseForge to Packwiz-Modrinth.py`

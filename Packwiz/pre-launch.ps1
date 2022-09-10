@@ -1,12 +1,12 @@
-# By Ultrasonic1209
+# Originally by Ultrasonic1209, adapted by osfanbuff63 for Vanilla++
 
 $mods = @(
     'ModYouDislike.jar'
     'AnotherMod.jar'
 )
 
-# Upgrading Fabulously Optimized
-Write-Output "Checking for FO updates..."
+# Upgrading Vanilla++
+Write-Output "Checking for Vanilla++ updates..."
 Set-Location ..
 
 $json = Get-Content "mmc-pack.json" | ConvertFrom-Json
@@ -23,7 +23,7 @@ if (Test-Path -Path ".\.minecraft") {
 $processOptions = @{
     FilePath = $Env:INST_JAVA
     ArgumentList = "-jar packwiz-installer-bootstrap.jar",
-        "https://raw.githubusercontent.com/Fabulously-Optimized/fabulously-optimized/main/Packwiz/$mcVersion/pack.toml"
+        "https://raw.githubusercontent.com/osfanbuff63/VanillaPlusPlus/main/Packwiz/$mcVersion/pack.toml"
 }
 Start-Process @processOptions -Wait
 

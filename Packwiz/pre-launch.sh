@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Should be ran from the pre-launch command in instance's settings.
 # Edits by RaptaG (https://github.com/RaptaG)
+# Adapted by osfanbuff63 for Vanilla++
 
 # Select the mods you wish to disable:
 mod0=
@@ -10,8 +11,8 @@ mod3=
 mod4=
 mod5=
 
-# Upgrading Fabulously Optimized
-echo "Checking for Fabulously Optimized upgrades..."
+# Upgrading Vanilla++
+echo "Checking for Vanilla++ upgrades..."
 cd ..
 mcver="$(jq -r '.components[]|select(.cachedName=="Minecraft")|.version' mmc-pack.json)"
 if [ -d .minecraft ]; then

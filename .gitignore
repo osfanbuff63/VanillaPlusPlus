@@ -1,3 +1,5 @@
 *.jar
 *.exe
+*.zip
+*.mrpack
 Packwiz/packwiz

@@ -1,7 +1,7 @@
 import os, json
 
 user_path = os.path.expanduser("~")
-cf_path = user_path + "/curseforge/minecraft/Instances/Fabulously Optimized/"
+cf_path = user_path + "/AppData/Roaming/MultiMC/Instances/Fabulously Optimized/"
 title_screen_path = cf_path + "config/isxander-main-menu-credits.json"
 warning_path = cf_path + "config/fabric_loader_dependencies.json"
 
@@ -23,7 +23,7 @@ save_file(title_screen_path, title_screen_obj)
 
 warning_file_obj = load_json(warning_path)
 try:
-    warning_file_obj["overrides"]["fabric-api"]["+recommends"]["Fabulously Optimized"] = ">" + new_version
+    warning_file_obj["overrides"]["fabric-api"]["+recommends"]["Vanilla++"] = ">" + new_version
 except KeyError:
-    warning_file_obj["overrides"]["fabric"]["+recommends"]["Fabulously Optimized"] = ">" + new_version
+    warning_file_obj["overrides"]["fabric"]["+recommends"]["Vanilla++"] = ">" + new_version
 save_file(warning_path, warning_file_obj)
